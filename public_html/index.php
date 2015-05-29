@@ -2,4 +2,5 @@
 
 echo "<h1>Welcome to Vagrant!</h1>";
 
-echo date('l, F jS, Y: g:ia');
+date_default_timezone_set('GMT');
+echo date('l, F jS, Y: g:ia, e');
