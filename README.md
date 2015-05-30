@@ -6,7 +6,6 @@ To use this Vagrantfile you will need a basic Vagrant setup.  This includes [Vag
 
 ## Setup
 1. Clone or download the ZIP archive of this Git repository to your project folder.  The directory structure will look like this:
-
 ```
 Root Folder (This is the main folder for the project and can be of any name that you choose.)
 |
@@ -16,13 +15,10 @@ Root Folder (This is the main folder for the project and can be of any name that
 |
 - /vagrant (This folder contains the Vagrantfile and lasp.sh provisioner file.)
 ```
-
 **NOTE:** By default the site will be named lasp.dev.  If you wish to change this to a different name (e.g. my-site.dev) you must change every reference to lasp.dev in the following files to the custom name:
 - /conf/lasp.dev.conf *Filename must be changed to the new name (e.g. lasp.dev.conf becomes my-site.dev.conf)*
 - /vagrant/Vagrantfile
 - /vagrant/lasp.sh *We recommend that you change this filename as well.*
 The easiest way to accomplish this task is to do a search and replace through the above files for 'lasp'.  This will only work **if** you change the filename of lasp.sh to the new name.
-
 2. Open your console go to the vagrant directory of the project.  Type `$ vagrant up`.  This will load the Vagrant VM with a 64-bit Linux Ubuntu machine.  The console will ask for your sudo password to set the custom hostname.
-
 3. Once the VM has finished loading open your web browser and navigate to 'http://lasp.dev'.  You should see a basic webpage that says 'Welcome to Vagrant!' and the current time in GMT.  To stop the server enter `$ vagrant halt` into your console while in the /vagrant directory.  You can also enter `$ vagrant destroy` to completely remove the VM from your system.
