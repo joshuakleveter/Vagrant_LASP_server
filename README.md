@@ -7,6 +7,7 @@ To use this Vagrantfile you will need a basic Vagrant setup.  This includes [Vag
 ## Setup
 Clone or download the ZIP archive of this Git repository to your project folder.  The directory structure will look like this:
 
+```
 Root Folder *This is the main folder for the project and can be of any name that you choose.*
 |
 - /public_html *This folder contains all the files for your site.*
@@ -14,5 +15,6 @@ Root Folder *This is the main folder for the project and can be of any name that
 - /conf *This folder contains the Apache .conf file for site configuration.*
 |
 - /vagrant *This folder contains the Vagrantfile and lasp.sh provisioner file.*
+```
 
 By default the site will be named lasp.dev.  If you wish to change this to a different name (e.g. my-site.dev) you must change every reference to lasp.dev in the following files to the custom name:
